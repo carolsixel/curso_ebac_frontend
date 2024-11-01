@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caroline Sixel de Souza">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Lista de Tarefas - EBAC</title>
+</head>
+<body>
+    <header>
+        <h1> Lista de Tarefas</h1>
+    </header>
+    <div>
+        <form>
+            <input id="new_task" type="text" required placeholder="Inserir Tarefa">
+            <button type="submit">Adicionar</button>
+            <button id="cancel-button" type="reset">Apagar Lista</button>
+        </form>
+        <div class="task">
+            <ul class="no-items" id="task-list">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
