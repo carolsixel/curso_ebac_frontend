@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+header{
+    background-color: #54c2e4e5;
+    padding: 16px 0;
+    margin-bottom: 56px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.header-left {
+    display: flex; 
+    align-items: center;
+}
+
+header h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: #d3047d;
+    margin-left: 16px;
+}
+
+header img{
+    max-width: 100px;
+}
+
+nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #d3047d;
+}
+
+nav a:hover{
+    color: #178b9b;
+    text-decoration: underline;
+}
+
+#fachadaDaLoja img{
+    width: 300px;
+}
+
+#fachadaDaLoja {
+    display: flex;
+}
+
+.sobreALoja{
+    display: block;
+    margin-left: 32px;
+}
+
+.sobreALoja h2{
+    margin-bottom: 32px;
+    border-bottom: 2px solid #057a8a;
+}
+
+.sobreALoja p{
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+.produtos ul{
+    list-style: none;
+}
+
+.produtos h2{
+    margin-top: 56px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #057a8a;
+}
+
+.produtos img{                                                                                                                                                       
+    width: 100%;
+}
+
+.tenisModelos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}                                                                               
+
+.tenisModelos li {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: block;
+    align-items: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.tenisModelos h3{
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tenisModelos p{
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.tenisModelos button{
+    padding: 8px;
+    width: 100%;
+    background-color: #004d57;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tenisModelos button:hover{
+    background-color: #d3047d;
+}
+
+footer{
+    display: block; 
+    align-items: center;
+    text-align: center;
+    background-color: #54c2e4e5;
+    padding: 16px 0;
+    margin-top: 56px;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 641px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    header .container{
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header h1{
+        margin-bottom: 32px;
+    }
+
+    header img{
+        margin-bottom: 32px;
+    }
+
+    #fachadaDaLoja {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fachadaDaLoja img{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .sobreALoja{
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .tenisModelos button{
+        padding: 12px;
+        width: 100%;
+        margin-top: 23px;
+        background-color: #004d57;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sobreALoja p{
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .tenisModelos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 642px) and (max-width: 1023px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    #fachadaDaLoja {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fachadaDaLoja img{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .sobreALoja{
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .tenisModelos button{
+        padding: 12px;
+        width: 100%;
+        margin-top: 23px;
+        background-color: #004d57;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sobreALoja p{
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .tenisModelos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
